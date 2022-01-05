@@ -1,6 +1,6 @@
 import Assets from "../core/AssetManager";
 import Scene from "./Scene";
-import { Text } from "pixi.js";
+import { Text } from "pixi.js-legacy";
 import config from "../config";
 
 export default class Splash extends Scene {

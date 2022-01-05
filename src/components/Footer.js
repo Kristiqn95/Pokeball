@@ -1,4 +1,4 @@
-import { Container, Graphics, Sprite } from "pixi.js";
+import { Container, Graphics, Sprite } from "pixi.js-legacy";
 
 import gsap from "gsap";
 
