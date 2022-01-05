@@ -16,13 +16,13 @@ export default class Button extends Container {
 
         this._createButton();
         this.on("click", () => this.onclick());
-
     }
+
     /**
-     * @private 
+     * @private
      */
     _createButton() {
-        const text = new Text('THROW BALL', {fontFamily: 'Arial', fill: 0xFFFFFF, fontSize: 20});
+        const text = new Text('THROW BALL', {fontFamily: 'Arial', fill: 0xffffff, fontSize: 20});;
 
         const bg = new Graphics();
         bg.beginFill(0xed263a);
@@ -42,6 +42,6 @@ export default class Button extends Container {
      * Button fade in
      */
     show() {
-        gsap.to(this, {alpha: 1, duration: this._fadeDuration, ease:'none'});
+        gsap.to(this, {alpha: 1, duration: this._fadeDuration, ease: 'none'});
     }
 }

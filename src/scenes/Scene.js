@@ -1,5 +1,5 @@
-import Assets from "../core/AssetManager";
-import { Container } from "pixi.js-legacy";
+import Assets from '../core/AssetManager';
+import { Container } from 'pixi.js-legacy';
 
 /**
  * Scene abstract class, defines common scene methods
@@ -9,7 +9,8 @@ import { Container } from "pixi.js-legacy";
  */
 export default class Scene extends Container {
   /* eslint-disable */
-  constructor() {
+  constructor()
+  {
     super();
 
     /**
@@ -25,34 +26,40 @@ export default class Scene extends Container {
    * @param  {Number} width  Window width
    * @param  {Number} height Window height
    */
-  onResize(width, height) {}
+  onResize(width, height) {
+
+  }
 
   /**
    * Define the assets used by this scene, so they can be loaded
    * and used by all subsequent scenes
    */
-  async preload({ images, sounds } = {}) {
+  async preload({images, sounds} = {})
+  {
     // note that we don't use Promise.all here
     // since images have to be loaded over the network first
     // and then uploaded to the gpu
-    return Assets.load({ images, sounds }, this.onLoadProgress.bind(this)).then(
-      () => Assets.prepareImages(images)
-    );
+    return Assets.load({ images, sounds }, this.onLoadProgress.bind(this))
+      .then(() => Assets.prepareImages(images));
   }
 
   /**
    * Called when an individual asset is loaded and load progress is made
-   *
+   * 
    * @param  {Number} progress Current progress value as a number
    */
-  onLoadProgress(progress) {}
+  onLoadProgress(progress) {
+
+  }
 
   /**
    * Called by the game when this scene's assets have been loaded that the content animations
    * can be started from here
-   *
+   * 
    */
-  onCreated() {
+  onCreated()
+  {
+
     return this.preload();
   }
   /* eslint-enable */
