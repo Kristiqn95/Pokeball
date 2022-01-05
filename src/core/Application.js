@@ -1,4 +1,4 @@
-import { Application, Sprite } from "pixi.js";
+import { Application, Sprite } from "pixi.js-legacy";
 
 import Assets from "./AssetManager";
 import Game from "../Game";

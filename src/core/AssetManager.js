@@ -1,4 +1,4 @@
-import { Loader, Spritesheet, Texture } from "pixi.js";
+import { Loader, Spritesheet, Texture } from "pixi.js-legacy";
 
 import { Howl } from "howler";
 import config from "../config";

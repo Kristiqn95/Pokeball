@@ -1,4 +1,4 @@
-import { Container } from "pixi.js";
+import { Container } from "pixi.js-legacy";
 import Play from "./scenes/Play";
 import Splash from "./scenes/Splash";
 
